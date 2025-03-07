@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+}
+.wrapper{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.userCard{
+    border: 1px solid black;
+    border-radius: 12px;
+    margin: 20px auto;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap :10px;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.userCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+button {
+    display: inline-block;
+    padding: 10px 15px;
+    font-size: 14px;
+    color: white;
+    background: lightskyblue;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #0056b3;
+}
+.user-id {
+    font-size: 14px;
+    color: gray;
+    margin-bottom: 8px;
+}
+
+.user-name {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}

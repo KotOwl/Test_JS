@@ -1,0 +1,84 @@
+.posts {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+}
+.postTitle{
+    background: white;
+    padding: 15px;
+    border-radius: 18px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 400px;
+    margin: 10px auto;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    border: 1px solid #333333;
+
+}
+.buttonForAllPosts{
+    margin-top: 15px;
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    width: 90vw;
+}
+.buttonForAllPosts:hover {
+    background-color: #0056b3;
+}
+.userInfo{
+    display: flex;
+    flex-direction: column;
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 1000px;
+    margin: 20px auto;
+
+}
+.postTitle>button{
+    width: 85%;
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+    margin: 20px;
+}
+.postTitle>button:hover{
+    background-color: #218838;
+    transform: scale(1.05);
+}
+.divForButton{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.divForButton>button{
+    height: 50px;
+}
+.userInfo p{
+        font-size: 18px;
+        color: #444;
+        margin-bottom: 20px;
+
+}
+.userInfo h1{
+    align-self: flex-end;
+    font-size: 40px;
+    border: 1px solid #333333;
+    padding: 20px;
+    border-radius: 48px;
+    background-color: lightblue;
+    position: absolute;
+}
